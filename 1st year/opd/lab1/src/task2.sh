@@ -1,0 +1,20 @@
+cd lab0
+chmod 777 cleffa5
+chmod 006 cleffa5/bellsprout
+chmod u=rx,g=rwx,o=wx cleffa5/oshawott
+chmod u=rx,g=wx,o=rwx cleffa5/togetic
+chmod 400 cleffa5/pidove
+chmod 355 cleffa5/charmander
+chmod 404 cleffa5/servine
+chmod 570 porygon20
+chmod u=rw,g=r,o= porygon20/mantyke
+chmod 700 porygon20/sandshrew
+chmod 222 porygon20/alakazam
+chmod u=,g=,o=r porygon20/gligar
+chmod u=r,g=,o=r roserade5
+chmod 666 togepi2
+chmod 004 vanilluxe0
+chmod u=rwx,g=rw,o=r vigoroth5
+chmod 751 vigoroth5/musharna
+chmod 666 vigoroth5/fearow
+chmod 577 vigoroth5/krokorok
