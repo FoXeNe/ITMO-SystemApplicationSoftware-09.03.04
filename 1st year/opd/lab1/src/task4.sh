@@ -1,4 +1,7 @@
 cd lab0
+mkdir tmp
+touch tmp/errors
+touch tmp/count
 cat roserade5 | wc -m > tmp/count
 ls -R cleffa5 2>tmp/errors | sort 
 cd ..
