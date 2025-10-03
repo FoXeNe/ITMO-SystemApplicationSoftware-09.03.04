@@ -1,0 +1,28 @@
+def to_negadecimal(num):
+    if isinstance(num, int):
+        return to_negadecimal_int(num)
+    else:
+        return to_negadecimal_notint(num)
+
+def to_negadecimal_int(num):
+    if num == 0:
+        return 0
+
+    res = ""
+    while num != 0:
+        rem = num % (-10)
+        num //= (-10)
+
+        if rem < 0:
+            num += 1
+            rem += 10
+            
+        res += str(rem)
+
+    return res[::-1]
+
+def to_negadecimal_notint(num):
+    numm = int(num)
+    rem = int(str(round(num - numm, 10))[2:])
+    return f"{to_negadecimal_int(numm)}.{to_negadecimal_int(rem)}"
+print(to_negadecimal(794))
