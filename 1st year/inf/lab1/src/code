@@ -25,4 +25,4 @@ def to_negadecimal_notint(num):
     numm = int(num)
     rem = int(str(round(num - numm, 10))[2:])
     return f"{to_negadecimal_int(numm)}.{to_negadecimal_int(rem)}"
-print(to_negadecimal(794))
+print(to_negadecimal(int(input("введите число:"))))
