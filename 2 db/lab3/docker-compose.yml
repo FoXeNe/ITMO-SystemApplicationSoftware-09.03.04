@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres-docker:
+    build: .
+    container_name: lab3_pg_docker
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "123"
+      POSTGRES_DB: labdb
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    shm_size: 256mb
